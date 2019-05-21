@@ -1,0 +1,9 @@
+<h2>Power Calculator</h2>
+<div>Base: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input [(ngModel)]="power"></div>
+<div> Exponent: <input [(ngModel)]="factor"></div>
+<p>
+   Power: {{power | customPipe: factor}}
+</p>
+
+ <h2>Power Calculator</h2>
+<p>calculate power : {{2 | customPipe: 10}}</p>

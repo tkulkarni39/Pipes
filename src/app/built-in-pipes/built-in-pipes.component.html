@@ -1,0 +1,114 @@
+<div>
+  <h4>Currency</h4>
+  <div class="c ard-text">
+   <p ngNonBindable>{{ 1234.56 | currency:'CAD' }}</p>
+    <p>{{ 1234.56 | currency:"CAD" }}</p>
+
+    <p ngNonBindable>{{ 1234.56 | currency:'INR':'code' }}</p>
+    <p>{{ 1234.56 | currency:'INR':'code'}}</p>
+
+    <p ngNonBindable>{{ 1234.56 | currency:'INR':'symbol' }}</p>
+    <p>{{ 1234.56 | currency:'INR':'symbol'}}</p>
+
+    <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol-narrow' }}</p>
+    <p>{{ 1234.56 | currency:'CAD':'symbol-narrow'}}</p>
+  </div>
+</div>
+
+<div>
+  <h4>Date</h4>
+  <div>
+    <p ngNonBindable>{{ dateVal | date: 'shortTime' }}</p>
+    <p>{{ dateVal | date: 'shortTime' }}</p>
+
+    <p ngNonBindable>{{ dateVal | date:'fullDate' }}</p>
+    <p>{{ dateVal | date: 'fullDate' }}</p>
+
+    <p ngNonBindable>{{ dateVal | date: 'd/M/y' }}</p>
+    <p>{{ dateVal | date: 'd/M/y' }}</p>
+
+    <p ngNonBindable>{{ dateVal | date: 'y/M/d' }}</p>
+    <p>{{ dateVal | date: 'y/M/d' }}</p>
+  </div>
+</div>
+
+<div>
+  <div>
+    <h4>DecimalPipe</h4>
+    <p ngNonBindable>{{ 3.14159265 | number: '3.1-2' }}</p>
+    <p>{{ 3.14159265 | number: '3.1-2' }}</p>
+
+    <p ngNonBindable>{{ 3.14159265 | number: '1.4-4' }}</p>
+    <p>{{ 3.14159265 | number: '1.4-4' }}</p>
+  </div>
+</div>
+
+<div>
+  <h4>JsonPipe</h4>
+  <div>
+    <p ngNonBindable>{{ jsonVal }}</p>
+    <p>{{ jsonVal }}</p>
+
+    <p ngNonBindable>{{ jsonVal | json }}</p>
+    <pre>{{ jsonVal | json }}</pre>
+  </div>
+</div>
+
+
+<div>
+  <h4>LowerCasePipe</h4>
+  <div>
+    <p ngNonBindable>{{ 'TEJAS' | lowercase }}</p>
+    <p>{{ 'TEJAS' | lowercase }}</p>
+  </div>
+</div>
+
+<div>
+  <h4>UpperCasePipe</h4>
+  <div>
+    <p ngNonBindable>{{ 'tejas' | uppercase }}</p>
+    <p>{{ 'tejas' | uppercase }}</p>
+  </div>
+</div>
+
+<div>
+  <h4>PercentPipe</h4>
+  <div>
+    <p ngNonBindable>{{ 0.123456 | percent }}</p>
+    <p>{{ 0.123456 | percent }}</p>
+
+    <p ngNonBindable>{{ 0.123456 | percent: '2.1-2' }}</p>
+    <p>{{ 0.123456 | percent: '2.1-2' }}</p>
+
+    <p ngNonBindable>{{ 42 | percent: '10.4-4' }}</p>
+    <p>{{ 0.123456 | percent : "10.4-4" }}</p>
+  </div>
+</div>
+
+<div>
+  <h4>SlicePipe</h4>
+  <div>
+    <p ngNonBindable>{{ [1,2,3,4,5,6] | slice:1:3 }}</p>
+    <p>{{ [1,2,3,4,5,6] | slice:1:3 }}</p>
+
+    <p ngNonBindable>{{ [1,2,3,4,5,6] | slice:2 }}</p>
+    <p>{{ [1,2,3,4,5,6] | slice:2 }}</p>
+
+    <p ngNonBindable>{{ [1,2,3,4,5,6] | slice:2:-1 }}</p>
+    <p>{{ [1,2,3,4,5,6] | slice:2:-1 }}</p>
+
+    <pre ngNonBindable>
+      &lt;ul&gt;
+        &lt;li *ngFor=&quot;let v of [1,2,3,4,5,6] | slice:2:-1&quot;&gt;
+          {{v}}
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    </pre>
+
+    <ul>
+      <li *ngFor="let v of [1,2,3,4,5,6] | slice:2:-1">
+        {{v}}
+      </li>
+    </ul>
+  </div>
+</div>

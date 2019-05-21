@@ -1,0 +1,19 @@
+
+<div>
+  <h4>AsyncPipe</h4>
+
+  <p ngNonBindable>{{ promiseData }} (without async pipe) </p>
+  <p>{{ promiseData }}  </p>
+
+  <p ngNonBindable>{{ promise | async }} (with async pipe) </p>
+  <p>{{ promise | async }}  </p>
+
+  <p ngNonBindable>{{ observableData }} (without async pipe) </p>
+  <p>{{ observableData }}</p>
+
+  <p ngNonBindable>{{ observable$ | async }} (with async pipe) </p>
+  <p>{{ observable$ | async }}</p>
+
+
+ 
+ </div>
